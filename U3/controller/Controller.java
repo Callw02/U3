@@ -118,6 +118,7 @@ public class Controller {
 
     public void setToCakeMenu() {
         currentLeftMenu = ButtonType.Cake;
+
         view.populateLeftPanel(cakeMenuString);
         view.populateRightPanel(currentOrderArray); //update left panel with new item - this takes a shortcut in updating the entire information in the panel not just adds to the end
         view.setTextCostLabelRightPanel("Total cost of order: " + String.valueOf(costCurrentOrder)); //set the text to show cost of current order
